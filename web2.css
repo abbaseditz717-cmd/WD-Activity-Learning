@@ -1,0 +1,706 @@
+```css
+/* ================= GENERAL ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #ffffff;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+    background: #ffffff;
+    padding: 18px 7%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    color: #0f766e;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #0ea5a4;
+}
+
+.logo small {
+    display: block;
+    color: #64748b;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #334155;
+    margin-left: 22px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #0f766e;
+}
+
+
+/* ================= EMERGENCY BAR ================= */
+
+.emergency-bar {
+    background: #dc2626;
+    color: white;
+
+    text-align: center;
+
+    padding: 10px;
+
+    font-size: 15px;
+}
+
+.emergency-bar strong {
+    margin-left: 8px;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 520px;
+
+    background:
+        linear-gradient(
+            rgba(15, 118, 110, 0.72),
+            rgba(15, 118, 110, 0.72)
+        ),
+        url("https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d")
+        center/cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    color: white;
+
+    padding: 40px 20px;
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.hero h1 {
+    font-size: 56px;
+    margin-bottom: 18px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+
+/* ================= BUTTONS ================= */
+
+.btn {
+    display: inline-block;
+
+    background: white;
+    color: #0f766e;
+
+    text-decoration: none;
+
+    padding: 13px 24px;
+
+    border-radius: 7px;
+
+    margin: 5px;
+
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #e2e8f0;
+}
+
+.btn.secondary {
+    background: transparent;
+    color: white;
+
+    border: 2px solid white;
+}
+
+
+/* ================= SECTIONS ================= */
+
+.section {
+    width: 86%;
+    margin: 70px auto;
+}
+
+.light {
+    width: 100%;
+    margin: 0;
+    padding: 70px 7%;
+    background: #f0fdfa;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    color: #0f172a;
+    margin-bottom: 8px;
+}
+
+.section-title p {
+    color: #64748b;
+}
+
+
+/* ================= ABOUT ================= */
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.about h3 {
+    color: #0f766e;
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+
+.about p {
+    color: #64748b;
+    margin-bottom: 15px;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.stats div {
+    background: #f0fdfa;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.stats strong {
+    display: block;
+    font-size: 32px;
+    color: #0f766e;
+}
+
+.stats span {
+    color: #64748b;
+}
+
+
+/* ================= CARDS ================= */
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+}
+
+.icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #0f766e;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #64748b;
+}
+
+
+/* ================= DOCTORS ================= */
+
+.doctor-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.doctor-card {
+    background: white;
+
+    padding: 30px;
+
+    text-align: center;
+
+    border-radius: 14px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.doctor-image {
+    width: 110px;
+    height: 110px;
+
+    background: #ccfbf1;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 55px;
+
+    margin: auto auto 20px;
+}
+
+.doctor-card h3 {
+    color: #0f172a;
+}
+
+.speciality {
+    color: #0f766e;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.doctor-card p {
+    color: #64748b;
+}
+
+.doctor-btn {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    background: #0f766e;
+    color: white;
+
+    padding: 10px 15px;
+
+    border-radius: 7px;
+
+    text-decoration: none;
+}
+
+.doctor-btn:hover {
+    background: #115e59;
+}
+
+
+/* ================= FACILITIES ================= */
+
+.facility-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.facility {
+    background: white;
+
+    padding: 30px;
+
+    text-align: center;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+
+    font-size: 40px;
+}
+
+.facility h3 {
+    font-size: 20px;
+    color: #0f766e;
+    margin: 10px 0;
+}
+
+.facility p {
+    font-size: 14px;
+    color: #64748b;
+}
+
+
+/* ================= VISITING HOURS ================= */
+
+.hours-box {
+    max-width: 800px;
+    margin: auto;
+
+    display: grid;
+    gap: 12px;
+}
+
+.hours-box div {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 18px 22px;
+
+    background: #f8fafc;
+
+    border-left: 5px solid #0f766e;
+
+    border-radius: 7px;
+}
+
+.hours-box span {
+    color: #64748b;
+}
+
+.emergency-hours {
+    border-left-color: #dc2626 !important;
+}
+
+
+/* ================= APPOINTMENT FORM ================= */
+
+.appointment-form {
+    max-width: 800px;
+
+    margin: auto;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 14px;
+
+    box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 7px;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #0f766e;
+
+    box-shadow: 0 0 0 3px #ccfbf1;
+}
+
+.form-group:nth-child(6) {
+    grid-column: 1 / -1;
+}
+
+.submit-btn {
+    grid-column: 1 / -1;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #0f766e;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background: #115e59;
+}
+
+
+/* ================= EMERGENCY SECTION ================= */
+
+.emergency-section {
+    background: #dc2626;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 45px 20px;
+}
+
+.emergency-section h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.emergency-section p {
+    margin-bottom: 18px;
+}
+
+.emergency-section a {
+    display: inline-block;
+
+    background: white;
+
+    color: #dc2626;
+
+    padding: 13px 25px;
+
+    border-radius: 7px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.contact-card {
+    background: #f8fafc;
+
+    padding: 30px;
+
+    text-align: center;
+
+    border-radius: 12px;
+
+    font-size: 35px;
+}
+
+.contact-card h3 {
+    font-size: 20px;
+
+    color: #0f766e;
+
+    margin: 10px 0;
+}
+
+.contact-card p {
+    font-size: 14px;
+
+    color: #64748b;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #0f172a;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 35px;
+
+    margin-top: 50px;
+}
+
+footer h2 {
+    margin-bottom: 8px;
+}
+
+footer span {
+    color: #14b8a6;
+}
+
+footer p {
+    color: #cbd5e1;
+
+    margin-top: 8px;
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 900px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 7px;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .doctor-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .facility-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 15px 5%;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+        font-size: 13px;
+    }
+
+    .hero {
+        min-height: 450px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .section {
+        width: 92%;
+        margin: 50px auto;
+    }
+
+    .light {
+        width: 100%;
+        padding: 50px 4%;
+    }
+
+    .section-title h2 {
+        font-size: 28px;
+    }
+
+    .card-grid,
+    .doctor-grid,
+    .facility-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stats {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hours-box div {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .appointment-form {
+        grid-template-columns: 1fr;
+
+        padding: 22px;
+    }
+
+    .form-group:nth-child(6),
+    .submit-btn {
+        grid-column: auto;
+    }
+}
+```
