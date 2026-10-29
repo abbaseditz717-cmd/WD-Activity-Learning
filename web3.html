@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointment Booking</title>
+    <link rel="stylesheet" href="web3.css">
+</head>
+<body>
+
+    <header>
+        <h2>MediCare+</h2>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#doctors">Doctors</a>
+            <a href="#booking">Book Appointment</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Your Health, Our Priority</h1>
+        <p>Find the right doctor and book your appointment easily.</p>
+        <a href="#booking" class="btn">Book Now</a>
+    </section>
+
+    <section class="container" id="doctors">
+        <h2>Our Doctors</h2>
+
+        <div class="doctor-list">
+
+            <div class="doctor-card">
+                <div class="avatar">👨‍⚕️</div>
+                <h3>Dr. Rahul Sharma</h3>
+                <p>Cardiologist</p>
+                <p>Experience: 10 Years</p>
+                <p>Timings: 9 AM - 1 PM</p>
+                <p>Available: Mon - Sat</p>
+                <a href="#booking" class="btn">Book Appointment</a>
+            </div>
+
+            <div class="doctor-card">
+                <div class="avatar">👩‍⚕️</div>
+                <h3>Dr. Priya Reddy</h3>
+                <p>Dermatologist</p>
+                <p>Experience: 8 Years</p>
+                <p>Timings: 10 AM - 2 PM</p>
+                <p>Available: Mon - Fri</p>
+                <a href="#booking" class="btn">Book Appointment</a>
+            </div>
+
+            <div class="doctor-card">
+                <div class="avatar">👨‍⚕️</div>
+                <h3>Dr. Arjun Kumar</h3>
+                <p>Pediatrician</p>
+                <p>Experience: 7 Years</p>
+                <p>Timings: 4 PM - 8 PM</p>
+                <p>Available: Mon - Sat</p>
+                <a href="#booking" class="btn">Book Appointment</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="container" id="booking">
+        <div class="booking-form">
+            <h2>Book Your Appointment</h2>
+            <p>Enter your details to request an appointment.</p>
+
+            <form>
+                <label for="name">Patient Name</label>
+                <input type="text" id="name"
+                       placeholder="Enter your full name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email"
+                       placeholder="Enter your email" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone"
+                       placeholder="Enter your phone number"
+                       pattern="[0-9]{10}" required>
+
+                <label for="doctor">Select Doctor</label>
+                <select id="doctor" required>
+                    <option value="">Choose a doctor</option>
+                    <option>Dr. Rahul Sharma - Cardiologist</option>
+                    <option>Dr. Priya Reddy - Dermatologist</option>
+                    <option>Dr. Arjun Kumar - Pediatrician</option>
+                </select>
+
+                <label for="date">Appointment Date</label>
+                <input type="date" id="date" required>
+
+                <label for="time">Available Time Slot</label>
+                <select id="time" required>
+                    <option value="">Select a time slot</option>
+                    <option>9:00 AM</option>
+                    <option>10:00 AM</option>
+                    <option>11:00 AM</option>
+                    <option>12:00 PM</option>
+                    <option>4:00 PM</option>
+                    <option>5:00 PM</option>
+                </select>
+
+                <label for="reason">Reason for Visit</label>
+                <textarea id="reason" rows="3"
+                          placeholder="Describe your concern"></textarea>
+
+                <button type="submit" class="btn">
+                    Confirm Appointment
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 MediCare+ | Your Health Matters</p>
+    </footer>
+
+</body>
+</html>
